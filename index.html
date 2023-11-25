@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container card col-6 mt-3">
         <div class="row">
             <form>
                 <div class="mb-3">
@@ -18,9 +19,14 @@
                   <input type="text" class="form-control" id="edad" aria-describedby="emailHelp">                  
                 </div>
 
-                <button type="button" class="btn btn-primary" id="btnGuadrar">Guardar</button>
-                <button type="button" class="btn btn-primary" id="btnMostrar">Mostrar</button>
+                <button type="button" class="btn btn-primary" id="btnGuadrar" onclick="acumular()">Guardar</button>
+                <button type="button" class="btn btn-primary" id="btnMostrar" onclick="mostrar()">Mostrar</button>
               </form>
+        </div>
+        <div class="row">
+            <h2>
+                Informacion Almacenada
+            </h2>
         </div>
         <div class="row">
             <!-- informacion -->
@@ -32,6 +38,7 @@
         </div>
     </div>
 
+    <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/code.js"></script>
 </body>
 </html>
